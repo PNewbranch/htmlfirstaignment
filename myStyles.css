@@ -1,0 +1,59 @@
+
+* { 
+    margin: 0;
+    padding: 0;   
+}
+
+
+body{
+    background-color: rgb(156, 220, 241);
+    font-family:sans-serif;
+}
+
+header{
+    background-color: rgb(219, 132, 92);
+}
+
+footer {
+    background-color: rgb(219, 132, 92);
+}
+      
+
+h1, h2 {
+    color: rgb(107, 10, 233);
+    text-align: left;
+}
+
+p {
+    color: rgb(231, 80, 80);
+    font-family: verdana;
+    font-size: 20px;
+}
+
+li{
+    color: rgb(9, 5, 233);
+}
+
+.justify-text {
+    text-align: justify;
+}
+
+.blue-justify-text {
+    font-family:sans-serif;
+    color: rgb(9, 5, 233);
+}
+
+.main-header-box {
+    background-color: rgb(158, 236, 69);
+}
+.p-text-box {
+    background-color: rgb(116, 236, 69);
+}
+
+.articel1-box {
+    background-color: rgb(65, 99, 27)
+}
+
+.articel2-box {
+    background-color: rgb(8, 80, 14);
+}
