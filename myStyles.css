@@ -1,59 +1,95 @@
-
-* { 
-    margin: 0;
-    padding: 0;   
+* {                         /*Globalt för alla*/
+    margin: 0;              /*tar bort space vänster*/
+    padding: 0;             /*tar bort space över*/
+    box-sizing: border-box; /*ger oss möjligheter att sätta margin/padding/ram samt space höjd bredd*/
 }
 
-
 body{
-    background-color: rgb(156, 220, 241);
+    width: 1024px;
+    margin-left: auto; /*dessa två får VÅR info centerad med lika mycket space vid sidorna*/
+    margin-right: auto;
+    background-color: rgb(236, 166, 15);
     font-family:sans-serif;
 }
 
-header{
-    background-color: rgb(219, 132, 92);
+
+h1{
+    height: 40px;
+    font-size: 25px;
+    background-color: crimson;
+    color: rgb(107, 10, 233);
 }
 
-footer {
-    background-color: rgb(219, 132, 92);
+nav { 
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 650px;
+    background-color: rgb(129, 201, 15);
+    height: 40px;   
+    text-align: center;
 }
-      
 
-h1, h2 {
+
+h2 { 
+    width: 900px;
+    /*clear: left; ingen funktion mig veterligen
+    break-before: always;*/
     color: rgb(107, 10, 233);
     text-align: left;
 }
 
 p {
     color: rgb(231, 80, 80);
-    font-family: verdana;
-    font-size: 20px;
+    /*text-align-last: justify; texten fyller ut en hel rad */
 }
 
-li{
-    color: rgb(9, 5, 233);
+
+aside {
+    display: block;
+    position: absolute;
+    top: 40px;
+    width: 300px;
+    background-color: rgb(126, 194, 233);
+    text-align: center;
 }
 
+
+
+footer {
+    color: rgb(231, 80, 80);
+}
+
+
+.navlist {
+    height: 40px;
+    width: 140px;
+    border: 1px solid black;
+    float:left;   
+}
+ 
+
+
+
+
+
+
+/*
 .justify-text {
     text-align: justify;
 }
+
 
 .blue-justify-text {
     font-family:sans-serif;
     color: rgb(9, 5, 233);
 }
+*/
 
-.main-header-box {
-    background-color: rgb(158, 236, 69);
+/*
+header {
+    color: rgb(218, 27, 27);
+    width: 100%;
+    float: left;        
 }
-.p-text-box {
-    background-color: rgb(116, 236, 69);
-}
-
-.articel1-box {
-    background-color: rgb(65, 99, 27)
-}
-
-.articel2-box {
-    background-color: rgb(8, 80, 14);
-}
+*/
