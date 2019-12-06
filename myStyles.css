@@ -1,6 +1,6 @@
 * {                         /*Globalt för alla*/
     margin: 0;              /*tar bort space vänster*/
-    padding: 0;             /*tar bort space över*/
+    padding: 5;             /*tar bort space över*/
     box-sizing: border-box; /*ger oss möjligheter att sätta margin/padding/ram samt space höjd bredd*/
 }
 
@@ -29,7 +29,6 @@ nav > ul > li {
     background-color: rgb(129, 201, 15);
     text-align: center;
     position: relative; /*följ moder-containern*/
-    float: left;
 } 
 
 li {  
@@ -37,36 +36,61 @@ li {
 }
 
 ol > li > ul {
-    margin: 10px;
+    padding: 10%;
 }
 
-h2 {
-    width: 75%;
+
+
+body > div > h2 {
+    display: block;
+    width: 300px;
+    height: 80px;
     font-size: 20px;
-    /*clear: left; ingen funktion mig veterligen
-    break-before: always;*/
+    text-align: left;
+    break-after: always;
     color: rgb(107, 10, 233);
+    float: left;
+}
+
+body > div > p {
+    display: block;
+    width: 300px;
+    height: 80px;
+    border: 2px solid rgb(23, 202, 47);
+    float: left;
+}
+
+
+
+article > P {
+    border: 2px solid rgb(80, 218, 183);
+}
+
+p {  
+    color: rgb(106, 231, 57);
     text-align: left;
 }
 
-p {
-    color: rgb(231, 80, 80);
-    /*text-align-last: justify; texten fyller ut en hel rad */
-}
+
 
 article {
+    display: block;
+    border: 2px solid rgb(223, 87, 24);
     float: left;
 }
 
+
+
 aside {
-    padding: 20px;
     top: 40px;
-    left: 930px;
+    padding: 40px;
     width: 25%;
-    background-color: rgb(126, 194, 233);
+    box-sizing: 100%;
+    background-color: rgb(233, 14, 14);
     text-align: left;
     float: left;
 }
+
 
 footer {
     bottom: 0;
@@ -74,6 +98,14 @@ footer {
     background-color: rgb(2, 24, 37);
     color: rgb(143, 241, 31);
     float: left;
+}
+
+
+
+.clearfix:after{
+    content:"";
+    display: table;
+    clear: both;
 }
 
 .navlist {
@@ -85,32 +117,15 @@ footer {
 
 .first-box-container {
     width: 75%;
-    position: relative;
+    border: 2px solid blue;
     float: left;
 }
-
-
- 
-
-
-
-
 
 .justify-text {
     text-align: justify;
 }
 
-
 .blue-justify-text {
     font-family:sans-serif;
     color: rgb(9, 5, 233);
-}
-
-
-
-.headbox {
-    color: rgb(218, 27, 27);
-    width: 100%;
-    float: left;  
-    position: absolute;      
 }
