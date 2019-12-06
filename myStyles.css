@@ -11,28 +11,38 @@ body{
     background-color: rgb(236, 166, 15);
     font-family:sans-serif;
 }
-
-
-h1{
+    
+h1 {
     height: 40px;
-    font-size: 25px;
+    width: 100%;
+    font-size: 20px;
     background-color: crimson;
     color: rgb(107, 10, 233);
 }
 
-nav { 
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 650px;
-    background-color: rgb(129, 201, 15);
-    height: 40px;   
-    text-align: center;
+nav {
+    margin-top: -40px; /*positionera upp dig/tillbaka dig så att li hamnar i rubrikrad*/
 }
 
+nav > ul > li { 
+    left: 300px;
+    background-color: rgb(129, 201, 15);
+    text-align: center;
+    position: relative; /*följ moder-containern*/
+    float: left;
+} 
 
-h2 { 
-    width: 900px;
+li {  
+    list-style: none; /*inga punkter eller nr i någon av våra li-grupper*/
+}
+
+ol > li > ul {
+    margin: 10px;
+}
+
+h2 {
+    width: 75%;
+    font-size: 20px;
     /*clear: left; ingen funktion mig veterligen
     break-before: always;*/
     color: rgb(107, 10, 233);
@@ -44,37 +54,48 @@ p {
     /*text-align-last: justify; texten fyller ut en hel rad */
 }
 
+article {
+    float: left;
+}
 
 aside {
-    display: block;
-    position: absolute;
+    padding: 20px;
     top: 40px;
-    width: 300px;
+    left: 930px;
+    width: 25%;
     background-color: rgb(126, 194, 233);
-    text-align: center;
+    text-align: left;
+    float: left;
 }
-
-
 
 footer {
-    color: rgb(231, 80, 80);
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(2, 24, 37);
+    color: rgb(143, 241, 31);
+    float: left;
 }
-
 
 .navlist {
     height: 40px;
     width: 140px;
     border: 1px solid black;
-    float:left;   
+    float: left;
 }
+
+.first-box-container {
+    width: 75%;
+    position: relative;
+    float: left;
+}
+
+
  
 
 
 
 
 
-
-/*
 .justify-text {
     text-align: justify;
 }
@@ -84,12 +105,12 @@ footer {
     font-family:sans-serif;
     color: rgb(9, 5, 233);
 }
-*/
 
-/*
-header {
+
+
+.headbox {
     color: rgb(218, 27, 27);
     width: 100%;
-    float: left;        
+    float: left;  
+    position: absolute;      
 }
-*/
