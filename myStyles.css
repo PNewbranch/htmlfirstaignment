@@ -4,12 +4,16 @@
     box-sizing: border-box; /*ger oss möjligheter att sätta margin/padding/ram samt space höjd bredd*/
 }
 
+
 body{
     width: 1024px;
     margin-left: auto; /*dessa två får VÅR info centerad med lika mycket space vid sidorna*/
     margin-right: auto;
     background-color: rgb(236, 166, 15);
     font-family:sans-serif;
+    border: 2px solid rgb(1, 15, 3);
+    
+
 }
     
 h1 {
@@ -42,8 +46,8 @@ ol > li > ul {
 
 
 body > div > h2 {
-    display: block;
-    width: 300px;
+    padding: 10px;
+    width: 100%;
     height: 80px;
     font-size: 20px;
     text-align: left;
@@ -54,16 +58,21 @@ body > div > h2 {
 
 body > div > p {
     display: block;
+    padding: 10px;
     width: 300px;
     height: 80px;
-    border: 2px solid rgb(23, 202, 47);
+    border: 2px solid rgb(236, 14, 218);
     float: left;
 }
 
 
 
 article > P {
-    border: 2px solid rgb(80, 218, 183);
+    color: rgb(230, 18, 106);
+
+    width: 50%;
+    padding: 40px;
+    float: left;
 }
 
 p {  
@@ -71,11 +80,15 @@ p {
     text-align: left;
 }
 
-
+img {
+    padding: 40px;
+    width: 35%;
+    float: right;
+}
 
 article {
     display: block;
-    border: 2px solid rgb(223, 87, 24);
+    border: px solid rgb(223, 87, 24);
     float: left;
 }
 
@@ -83,11 +96,12 @@ article {
 
 aside {
     top: 40px;
-    padding: 40px;
+    padding: 20px;
     width: 25%;
-    box-sizing: 100%;
-    background-color: rgb(233, 14, 14);
+    height: 1190px;
+    background-color: rgb(233, 70, 178);
     text-align: left;
+    border: px solid rgb(6, 0, 15);
     float: left;
 }
 
@@ -96,7 +110,7 @@ footer {
     bottom: 0;
     width: 100%;
     background-color: rgb(2, 24, 37);
-    color: rgb(143, 241, 31);
+    color: rgb(241, 31, 84);
     float: left;
 }
 
@@ -128,4 +142,5 @@ footer {
 .blue-justify-text {
     font-family:sans-serif;
     color: rgb(9, 5, 233);
+    text-align: justify;
 }
